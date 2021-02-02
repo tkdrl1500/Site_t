@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+}
+
+body {
+  overflow: hidden; /*스크롤 잠그면서 안보임*/
+} /*스크롤을 안보이게 하기위해서*/
+
+.container {
+  display: flex;
+  width: 1000vw; /*브라우저 폭의 10배로 세팅*/
+  height: 100vh;
+  background: #fff000;
+}
+.page {
+  width: 100vw;
+  height: 100vh;
+}
+.page:nth-child(odd) {
+  /*형제 클래스의 순서 중 홀수번 째 인 요소 */
+  background: orange;
+}
+.page:nth-child(even) {
+  /*형제 클래스의 순서 중 짝수번 째 인 요소 */
+  background: dodgerblue;
+}
+
+.intro {
+  color: red;
+}
